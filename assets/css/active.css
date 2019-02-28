@@ -1,0 +1,429 @@
+/***
+	* Colors used:
+		1. Primary: #330004 - Black Bean
+			This color will be used as the primary background color and
+			colors for any buttons or main focus itrems throughout the website.
+		2. Secondary: #E7ECEF - Glitter
+			This color will be used in contrast with the primary color. That is,
+			where the background is primary, the font will be secondary and vice versa.
+		3. Tertiary: #FA824C - Salmon
+			This color will be used in complrement with darker thremed colors in order to
+			draw attention
+	*
+	*
+	*background: #ADA996;  /* fallback for old browsers */
+	/*background: -webkit-radial-gradient(#EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+	/*background: radial-gradient(#EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/*
+	*
+	*
+	*
+*****/
+
+/* default stylings */
+	@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&subset=latin-ext');
+
+	*{
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+
+	html, body{
+		height: 100%;
+	}
+	body{
+		scroll-behavior: smooth;
+		font-size: 20px;
+		font-family: 'Lato', sans-serif;
+		text-align: center;
+		color: #FAFFFD;
+	}
+
+	hr{
+		border: 0;
+		height: 2px;
+		background: -webkit-gradient(linear, left top, right top, from(rgba(255,255,255,0)), color-stop(rgba(255, 255, 255, 0.5)), to(rgba(255,255,255,0)));
+		background: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255, 255, 255, 0.5), rgba(255,255,255,0));
+		background: -o-linear-gradient(left, rgba(255,255,255,0), rgba(255, 255, 255, 0.5), rgba(255,255,255,0));
+		background: linear-gradient(to right, rgba(255,255,255,0), rgba(255, 255, 255, 0.5), rgba(255,255,255,0));
+	}
+
+	h1, h2, h3, h4, h5, h6{
+		line-height:1.618;
+		font-weight:700;
+		letter-spacing: 1.5px;
+		text-transform: uppercase;
+	}
+
+	h1,h2{font-size:2rem;}
+	h3, h4{font-size:1.618034rem;}
+	h5,h6{font-size:1.294427rem;}
+
+	ul > li, p{
+		line-height: 1.316;
+		font-weight:300;
+		font-size:1rem;
+		letter-spacing: 0.25px;
+	}
+	table{
+		max-width:1440px;
+		border-collapse: collapse; /*Required to style tr*/
+	}
+	td, th{
+	  	vertical-align: text-bottom;
+	}
+	td{
+		font-size:1.2rem;
+		text-align:left;
+	}
+
+	td:nth-child(odd){
+		width:50px;
+	}
+	td:nth-child(even){
+		max-width:300px;
+	}
+	td > h1{
+		text-align:center;
+	}
+	caption{
+		font-size:1.618rem;
+		height:125px;
+	}
+	td > h3 {
+		text-align:center;
+	}
+	td ul > li{
+		width:80%;
+		margin: 0 auto;
+	}
+	ol{
+		display:flex;
+		flex-direction: column;
+		margin-top:5%;
+	}
+	ol > li{
+		padding:1.618% 1%;
+	}
+
+	li > p{
+		text-align:left;
+		font-weight:300;
+	}
+
+	ul > li{
+		margin:3%;
+	}
+
+	a, a:visited{
+		color: #E7ECEF;
+		font-size:1.3rem;
+		text-transform: uppercase;
+		text-decoration: none;
+		transition: all 0.25s ease;
+	}
+	a:hover{
+		color: #666;
+		font-weight:700;
+	}
+	.image-container {
+		width:100%; 
+		
+	}
+	.image-container > img { 
+		width:100%; 
+		height: auto;
+	}
+
+	.underlined{
+		border-bottom: 2px dashed #FA824C;
+	}
+
+	.flex-parent{
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+	}
+	.about-container, .list-container{
+		flex-direction: row;
+	}
+/* End of default stylings */
+
+/* index.html */
+	.top-content.index-content-wrapper{
+		text-align:center;
+		padding:20px 25%;
+		height:80%;
+		align-self:center;
+	}
+
+	.content.index-content{
+		height:100%;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.content.index-content > h1{
+		text-align: center;
+	}
+	.content.index-content ul{
+		display: inline-flex;
+		list-style: none;
+		width: 600px;
+		justify-content: space-around;
+	}
+
+	.content.index-content ul > li{
+		padding: 1% 5%;
+		margin: 0 auto;
+	}
+
+/* End of index.html */
+
+/* aboutme.html */
+	.aboutme-body{
+		color:#E7ECEF;
+	}
+	.landing-section{
+		width:100%;
+		height:100%;
+		justify-content: space-around;
+
+		display: flex;
+		flex-flow: row nowrap;
+	}
+	.top-section, .top-content{
+	    box-sizing: border-box; /* required */
+	    width: 100%; /* required */
+	    flex: none; /* required */
+	    overflow:hidden;
+	}
+	
+	.top-section{
+		height:100%;
+
+		 
+		background: -webkit-linear-gradient(
+			rgba(2, 2, 2, 0.4),
+			rgba(2, 2, 2, 0.4)
+		), url("../images/ai-artificial-intelligence-codes-247791.jpg"); 
+		background: -o-linear-gradient(
+			rgba(2, 2, 2, 0.4),
+			rgba(2, 2, 2, 0.4)
+		), url("../images/ai-artificial-intelligence-codes-247791.jpg"); 
+		background: linear-gradient(
+			rgba(2, 2, 2, 0.4),
+			rgba(2, 2, 2, 0.4)
+		), url("../images/ai-artificial-intelligence-codes-247791.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		-webkit-filter: blur(3px);
+		-moz-filter: blur(3px);
+		-o-filter: blur(3px);
+		-ms-filter: blur(3px);
+		filter: blur(2px);
+		transform: scale(1.01);
+
+    	display: flex; /* required */
+    	flex-flow: row nowrap; /* required */
+	}
+	.top-content{
+		width:100%;
+		flex:none;
+		padding: 20%;
+		justify-content: center;
+		margin-left: -100%;
+		z-index: 2;
+	}
+	.top-content h1, .top-content p{
+		text-align: left;
+		text-transform:initial;
+	}
+
+	/* scroll */
+
+	.scroll-down {
+	    margin: 25% auto 0 auto;
+	    width: 120px;
+	    color: #fff;
+	    text-align: center;
+
+
+		-webkit-transition: color 0.2s ease-in;
+		-o-transition: color 0.2s ease-in;
+		transition: all 0.2s ease-in;
+	}
+	.scroll-down p{
+		padding-bottom: 5%;
+		font-size: 1.2rem;
+	}
+
+	.scroll-down:hover{
+		font-size:105%;
+		opacity: 0.75;
+	}
+	.scroll-down:hover .fa-chevron-down{
+		-webkit-animation: bounce 2s infinite;
+		animation: bounce 2s infinite;
+	}
+
+	@-webkit-keyframes bounce {
+		0%, 20%, 50%, 80%, 100% {
+			-webkit-transform: translateY(0);
+	        transform: translateY(0);
+		}
+		40% {
+			-webkit-transform: translateY(-10px);
+	        transform: translateY(-10px);
+		}
+		60% {
+			-webkit-transform: translateY(-2px);
+	        transform: translateY(-2px);
+		}
+	}					
+	@keyframes bounce {
+		0%, 20%, 50%, 80%, 100% {
+			-webkit-transform: translateY(0);
+	        åtransform: translateY(0);
+		}
+		40% {
+			-webkit-transform: translateY(-10px);
+	        transform: translateY(-10px);
+		}
+		60% {
+			-webkit-transform: translateY(-2px);
+	        transform: translateY(-2px);
+		}
+	}
+
+	.scroll-down p{
+		font-size:0.6rem;
+	    text-align: center;
+		text-transform: uppercase;
+	}
+	.fa-chevron-down {
+	    color: #FA824C;
+	}
+
+	.about-section{
+		width:100%;
+		background: #330004;
+		margin:0 auto;
+	}
+	.about-container{
+		margin: 0 auto;
+		width: 80%;
+		height:100%;
+		max-height:400px;
+		max-width:1440px;
+		
+		color: hsl(60, 22%, 88%);
+	}
+	.about-container > .flex-child {
+		width:40%;
+	}
+
+	.about-container .image-container{
+		width:100%;
+		height:100%;
+		overflow:hidden;
+	}
+	.about-container img{ 
+		width:auto;
+		height:100%;
+
+	}
+	.about-container > .summary-container{
+		width:60%;
+		display: flex;
+		flex-direction: column;
+  		justify-content: center;
+	}
+	.about-content{
+		height:auto;
+	}
+	.summary-container h1{
+		text-transform: uppercase;
+		vertical-align: text-bottom;
+	}
+	p.about-description{
+		text-align:justify;
+		margin: 5% auto;
+	}
+	.about-container > .flex-child{
+		margin:0 auto;
+	}
+	
+	.top-section > .flex-child{
+		max-width:600px;
+		margin: 0 auto;
+		flex-direction: row;
+	}
+
+	.table-section{
+		width:100%;
+		padding:5% 0;
+		background: #fffff4;
+		color: #330004;
+	}
+	.table-container{
+		width:90%;
+		margin: 0 auto;
+	}
+	.table-container > table{
+		margin: 0 auto;
+
+		font-size:0.8rem;
+	}
+
+	th.image-container{
+		width:300px;
+		height:300px;
+
+		overflow: hidden;
+	}
+	th.image-container > img{
+		width:100%;
+		height:100%;
+		border-radius:100%;
+	}
+
+	.list-section{
+		width:100%;
+		background:#330004;
+	}
+	.list-container{
+		width:80%;
+		padding: 5% 0;
+		margin: 0 auto;
+	}
+	.list-wrapper{
+
+		flex-direction:row;
+	}
+
+	.fixed-home{
+		width:100%;
+		height:35px;
+		background:rgba(51,0,4,0.3);
+		z-index:99999;
+		
+		position:fixed;
+		top:0;
+		left:0;
+
+	}
+	.fixed-home a{
+		text-align:center;
+		color:#fffff4;
+		padding:2px;
+		opacity:1;
+	}
+
+	.display{
+		display:none;
+
+	}
+/* End of aboutme.html 
